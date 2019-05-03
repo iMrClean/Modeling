@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.Controller">
+    <Pane prefHeight="600.0" prefWidth="800.0">
+        <TableView fx:id="table" layoutX="45.0" layoutY="28.0" prefHeight="535.0" prefWidth="152.0">
+            <columns>
+                <TableColumn fx:id="x" prefWidth="75.0" text="X" />
+                <TableColumn fx:id="y" prefWidth="75.0" text="Y" />
+            </columns>
+        </TableView>
+        <Label layoutX="255.0" layoutY="89.0" prefHeight="17.0" prefWidth="85.0" text="Значение Х" />
+        <Label layoutX="256.0" layoutY="134.0" prefHeight="17.0" prefWidth="160.0" text="Значение степени полинома" />
+        <Label layoutX="256.0" layoutY="178.0" prefHeight="17.0" prefWidth="160.0" text="Результат вычисления" />
+        <Label layoutX="256.0" layoutY="222.0" prefHeight="17.0" prefWidth="160.0" text="Точный результат" />
+        <Label layoutX="255.0" layoutY="266.0" prefHeight="17.0" prefWidth="160.0" text="Корень функции" />
+        <Button layoutX="260.0" layoutY="473.0" mnemonicParsing="false" onAction="#calculateButtonAction" text="Рассчитать" />
+        <Button layoutX="362.0" layoutY="473.0" mnemonicParsing="false" onAction="#rootButtonAction" prefHeight="25.0" prefWidth="76.0" text="Корень" />
+        <Button layoutX="459.0" layoutY="473.0" mnemonicParsing="false" onAction="#clearButtonAction" prefHeight="25.0" prefWidth="76.0" text="Сброс" />
+        <TextField fx:id="xValue" layoutX="506.0" layoutY="85.0"  />
+        <TextField fx:id="polynomial" layoutX="506.0" layoutY="130.0" />
+        <TextField fx:id="result" layoutX="506.0" layoutY="174.0" />
+        <TextField fx:id="currentResult" layoutX="506.0" layoutY="218.0" />
+        <TextField fx:id="sqrtFunction" layoutX="506.0" layoutY="262.0" />
+    </Pane>
+</GridPane>
